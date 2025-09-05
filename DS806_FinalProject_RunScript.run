@@ -1,0 +1,20 @@
+# The Production mathematical model is defined in file "DS806_Final_Project_Model.mod".
+
+
+reset;
+
+
+model  DS806_Final_Project_Model.mod;
+
+data   Project_Data.dat;
+
+option solver cplex;
+
+solve;
+
+
+display X, TotalCost;
+
+#option omit_zero_rows 1;
+# this option omits displaying variables that are 0
+

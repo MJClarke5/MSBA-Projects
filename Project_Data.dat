@@ -1,0 +1,78 @@
+# ----------------------------------------------------------------------------------------------------------------
+# This is the "data" file accompanying "DS806_Final_Project.mod"
+# This data corresponds to the DS 806 Final Project ...
+# ----------------------------------------------------------------------------------------------------------------
+set supplyNodes =  Wool Lining Silk Rayon Cashmere Leatherette Cotton;
+
+set demandNodes =  WoolP WoolJ CasLS SilkS SilkC RayonS FauxLPants FauxLShirt Blouse CottonWS CottonShorts;
+
+
+param Price :=
+
+				
+WoolP			300
+WoolJ			320
+CasLS			450
+SilkS			180
+SilkC			120
+RayonS			270
+FauxLPants		350
+FauxLShirt		200
+Blouse			120
+CottonWS		130
+CottonShorts	75;
+
+param supplyInput :=
+
+Wool1 		 45000
+Lining1 	 9000
+Silk1   	 18000
+Rayon1 		 30000
+Cashmere1 	 9000
+Leatherette1 20000
+Cotton1		 30000 ;
+
+param demandMax :=
+
+S1 7000
+S2 5000
+S3 4000
+S4 12000
+S5 15000
+S7 5000
+S8 6000  ;
+
+param demandMin :=
+
+WoolPants  4200
+WoolJacket 3200
+RayonSkirt 2800;
+  
+param ProductionCost :
+				Labor	Wool	Lining	 Silk	 Rayon	 Cashmere	 Leatherette 	Cotton	 :=
+WoolP			160		27		0	 	 0	 	 0	 	 0	 	 	 0	 	 	 	0		
+WoolJ			140		22.5	2.25	 0	 	 0	 	 0	 	 	 0	 	 	 	0
+CasLS			150	 	0	 	 0	 	 0	 	 90	 	 0	 	 	 0				0
+SilkS			100	 	0	 	 19.5	 0	 	 0		 0		 	 0				0
+SilkC			60	 	0	 	 19.5	 0	 	 0	 	 0	 	 	 0				0
+RayonS			120	 	2.25	 0	 	 4.5 	 0		 0	 	 	 0				0
+FauxLPants		178	 	0	 	 0	 	 0	 	 0		 36	 	 	 0				0
+FauxLShirt		160	 	0	 	 0	 	 0	 	 0		 18 	 	 0				0
+Blouse			90	 	0	 	 0	 	 3.375 	 0		 0	 	 	 0				0
+CottonWS		60	 	0	 	 0	 	 0	 	 0		 0	 	 	 0				3.75
+CottonShorts	40	 	0	 	 0	 	 0	 	 0		 0	 	 	 0				1.25	;
+
+param MaterialInput :
+
+				Wool	Lining	 Silk	 Rayon	 Cashmere	 Leatherette 	Cotton	 :=
+WoolP			3		0	 	 0	 	 0	 	 0	 	 	 0	 	 	 	0		
+WoolJ			2.5		1.5		 0	 	 0	 	 0	 	 	 0	 	 	 	0
+CasLS			0	 	0	 	 0	 	 0	 	 1.5	 	 0	 	 	 	0
+SilkS			0	 	0	 	 1.5	 0	 	 0		 	 0	 	 	 	0
+SilkC			0	 	0	 	 1.5	 0	 	 0	 	     0	 	 	 	0
+RayonS			0	 	1.5	 	 0	 	 2	 	 0		 	 0	 	 	 	0
+FauxLPants		0	 	0	 	 0	 	 0	 	 0		 	 3	 	 	 	0
+FauxLShirt		0	 	0	 	 0	 	 0	 	 0		 	 1.5 	 	 	0
+Blouse			0	 	0	 	 0	 	 1.5 	 0		 	 0	 	 	 	0
+CottonWS		0	 	0	 	 0	 	 0	 	 0		 	 0	 	 	 	1.5
+CottonShorts	0	 	0	 	 0	 	 0	 	 0		 	 0	 	 	 	0.5	;
