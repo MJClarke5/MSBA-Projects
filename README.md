@@ -10,9 +10,11 @@ Spring 2023:
 Fall 2023:
 
 Spring 2024:
+-  DS806 - Linear Programming to Optimize Fashion Production
+-  DS808 - Optimizing Airport Runways
 
 Fall 2024:
 
-Spring 2024:
+Spring 2025:
 -  DS809 - Fast Fourier Transform on DC Bike Rental Data
 -  DS810 - Airbnb Project (Part I: Kaggle Competition, Part II: Causal Discovery on dataset)
